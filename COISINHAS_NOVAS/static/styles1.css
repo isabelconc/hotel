@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    vertical-align: top;
+}
+
+body {
+    font-family: serif;
+    line-height: 2.5;
+    background-color: #e0e0e0;
+    color: #2e2929;
+    text-align: center;
+}
+
+header {
+    font-family: serif;
+    background-image: linear-gradient(to right, #252627, #7d7d7e);
+    color: white;
+    padding: 45px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    margin: left;
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(19, 18, 18);
+}
+
+section {
+    background: rgb(177, 174, 174);
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: serif;
+    font-size: 105%;
+}
+
+.img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+}
+
+.comodidades-container,
+.quartos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comodidade,
+.quarto {
+    flex: 1 1 30%;
+    margin: 10px;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.comodidade:hover,
+.quarto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #f8f8f8;
+    width: 100vw;
+    border-radius: 0;
+    margin-top: 20px;
+}
+
+footer p, footer ul {
+    margin: 5px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+footer a.reclame-aqui {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer a.reclame-aqui:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.social-media ul li a:hover {
+    color: #ddd;
+}
+
+.img {
+    width: 50%;   
+    height: auto;  
+    max-width: 50%; 
+}
+
+.img2 {
+    width: 50%;   
+    height: auto;  
+    max-width: 50%; 
+}
+
+#quartos {
+    background: rgb(78, 78, 78);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#quartos h2 {
+    font-size: 1.5em;
+    color: #1f1f1f;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-style: italic;
+}
+
+a {
+    color: #3b3b3b; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1c1d1d; 
+    text-decoration: underline;
+}
+
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    border-radius: 8px; 
+}
+
+.image-container {
+    position: relative;
+    width: 350%; 
+    max-width: 350px; 
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px; 
+}
+
+.image-container .overlay p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.image-container .overlay a {
+    color: #dfbe08; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image-container:hover .overlay {
+    opacity: 1; 
+}

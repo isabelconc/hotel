@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../static/style3.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+      <br>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+  </div>
+  
+  <script src="../models/Usuario.js">
+    document.getElementById("loginForm").addEventListener("submit", login);
+  </script>
+</body>
+</html>

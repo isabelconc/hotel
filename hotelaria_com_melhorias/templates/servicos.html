@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Encantado - Conta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../static/style6.css">
+</head>
+<body>
+    <header>
+        <center>
+            <h1>Serviços</h1>
+            <a href="home.html">
+                <i class="fas fa-home" style="font-size:24px;"></i>
+            </a>
+        </center>
+    </header>
+
+    <h2>Reservas</h2>
+    <select id="servico">
+        <option value="" disabled selected> Clique aqui para visualizar as opções </option>
+        <option value="50">R$ 50 | Restaurante - Cardapio especial </option>
+        <option value="30">R$ 30 | Lavanderia - lavagem e seca </option>
+        <option value="100">R$ 100 | Spa e massagem</option>
+    </select>
+    <button onclick="adicionarConta('servico')">Adicionar Serviço</button>
+
+    <h2>Frigobar</h2>
+    <select id="frigobar">
+        <option value="" disabled selected>Clique aqui para visualizar as opções</option>
+        <option value="5">R$ 5 | Água</option>
+        <option value="7">R$ 7 | Refrigerante</option>
+        <option value="10">R$ 10 | Cerveja</option>
+        
+    </select>
+    <button onclick="adicionarConta('frigobar')">Adicionar Item</button>
+
+    <h2>Conta</h2>
+    <ul id="conta"></ul>
+    <p><strong>Total: R$ <span id="total">0</span></strong></p>
+    <script src="../models/Serviço.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Hotel Encantando. Todos os direitos reservados.</p>
+        <p><a href="https://www.reclameaqui.com.br/" class="reclame-aqui">Alguma reclamação? Reclame aqui:</p></a>
+        <p>Siga-nos nas redes sociais:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/?locale=pt_BR">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://chat.whatsapp.com/KtjXCfB4gKZ4b0LSkhF3SB">Whatsapp</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

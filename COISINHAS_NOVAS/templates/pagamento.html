@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento com Cartão</title>
+    <link rel="icon" type="image/jpg" href="C:\Users\INTEL\Desktop\hotelaria_com_melhorias(2)\hotelaria_com_melhorias\assets\hotel.jpg">
+    <link rel="stylesheet" href="../static/pagamento.css">
+</head>
+<body>
+
+    <div class="payment-form">
+        <h2>Pagamento com Cartão</h2>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="nome">Nome no Cartão</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="numero-cartao">Número do Cartão</label>
+                <input type="text" id="numero-cartao" name="numero-cartao" maxlength="16" required>
+            </div>
+            <div class="form-group">
+                <label for="validade">Data de Validade (MM/AA)</label>
+                <input type="text" id="validade" name="validade" maxlength="5" required>
+            </div>
+            <div class="form-group">
+                <label for="codigo-seguranca">Código de Segurança (CVV)</label>
+                <input type="text" id="codigo-seguranca" name="codigo-seguranca" maxlength="3" required>
+            </div>
+            <button type="submit" class="btn">Pagar Agora</button>
+        </form>
+        <div id="success-message" class="success-message">
+            Pagamento realizado com sucesso!
+        </div>
+    </div>
+
+    <script src="pagamento.js"></script>
+</body>
+</html>
